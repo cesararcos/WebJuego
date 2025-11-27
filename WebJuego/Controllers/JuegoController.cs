@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using WebJuego.Application.Contract;
+using WebJuego.Domain.Entities;
 using WebJuego.Domain.Request;
 using WebJuego.Domain.Response;
 
@@ -15,7 +16,7 @@ namespace WebJuego.Controllers
         [HttpPost]
         public IActionResult Registro(JugadoresRequest jugadores)
         {
-            ResponseDto<bool> responde = _juegoAppService.registro(jugadores);
+            ResponseDto<JugadoresResponse> responde = _juegoAppService.registro(jugadores);
 
             if (!responde.Success)
                 return NotFound(responde.ErrorMessage);

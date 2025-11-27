@@ -1,0 +1,59 @@
+﻿@model WebJuegoUI.Models.Response.JuegoViewModel
+
+<div class="container mt-4">
+
+    <h2 class="mb-4 text-center">Juego: Piedra, Papel o Tijera</h2>
+
+    <div class="row">
+        <!-- Área de juego -->
+        <div class="col-md-6">
+            <div class="border p-3 rounded">
+
+                <h4>Jugadores</h4>
+                <p><strong>Jugador 1:</strong> @Model.NombreJugador1</p>
+                <p><strong>Jugador 2:</strong> @Model.NombreJugador2</p>
+
+                <h5 class="mt-3">Turno actual:</h5>
+                <p id="lblTurno" class="fw-bold text-primary"></p>
+
+                <hr />
+
+                <!-- Select para escoger movimiento -->
+                <label class="form-label fw-bold">Elige tu movimiento:</label>
+                <select id="selectMovimiento" class="form-select mb-3">
+                    <option value="">-- Selecciona --</option>
+                    <option value="piedra">Piedra</option>
+                    <option value="papel">Papel</option>
+                    <option value="tijera">Tijera</option>
+                </select>
+
+                <button id="btnMovimiento" class="btn btn-success w-100 mb-2">
+                    Registrar movimiento
+                </button>
+
+            </div>
+        </div>
+
+        <!-- Resultados parciales -->
+        <div class="col-md-6">
+            <div class="border p-3 rounded">
+                <h4>Resultados por ronda</h4>
+                <ul id="listaResultados" class="list-group">
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<input type="hidden" id="jugador1Var" value="@Model.NombreJugador1" />
+<input type="hidden" id="jugador2Var" value="@Model.NombreJugador2" />
+
+
+<script>
+    window.juegoConfig = {
+        jugador1: "@Model.NombreJugador1",
+        jugador2: "@Model.NombreJugador2"
+    };
+</script>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/js/juego.js"></script>

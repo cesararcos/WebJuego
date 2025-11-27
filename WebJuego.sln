@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebJuego.Domain", "WebJuego
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebJuego.Infrastructure", "WebJuego.Infrastructure\WebJuego.Infrastructure.csproj", "{A9240F2A-0CF3-4664-B948-E4FB02F688F4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebJuegoUI", "WebJuegoUI\WebJuegoUI.csproj", "{AB76DA72-DE56-4546-AFB6-243E55794842}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{A9240F2A-0CF3-4664-B948-E4FB02F688F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A9240F2A-0CF3-4664-B948-E4FB02F688F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A9240F2A-0CF3-4664-B948-E4FB02F688F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB76DA72-DE56-4546-AFB6-243E55794842}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB76DA72-DE56-4546-AFB6-243E55794842}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB76DA72-DE56-4546-AFB6-243E55794842}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB76DA72-DE56-4546-AFB6-243E55794842}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
