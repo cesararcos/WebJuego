@@ -6,8 +6,7 @@
         let nombre2 = $("#txtJugador2").val();
 
         if (!nombre1 || !nombre2) {
-            alert("Debe ingresar ambos jugadores");
-            Swal.fire("Error", "Ha ocurrido un problema", "error");
+            Swal.fire("Error", "Debe ingresar ambos jugadores", "error");
 
             return;
         }
